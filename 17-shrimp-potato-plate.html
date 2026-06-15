@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shrimp & Potato Plate – Zenith Performance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Shrimp and Potato Plate",
+    "description": "Crispy seasoned shrimp over roasted baby potatoes — 390 calories, 38g protein, and ready in under 25 minutes.",
+    "recipeYield": "2 servings",
+    "prepTime": "PT5M",
+    "cookTime": "PT20M",
+    "totalTime": "PT25M",
+    "recipeCategory": "Dinner",
+    "recipeCuisine": "American",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "390 calories",
+      "proteinContent": "38 g",
+      "carbohydrateContent": "36 g",
+      "fatContent": "10 g"
+    },
+    "recipeIngredient": [
+      "450 grams large shrimp, peeled and deveined",
+      "400 grams baby potatoes, halved",
+      "1 tablespoon olive oil",
+      "1 teaspoon smoked paprika",
+      "1 teaspoon garlic powder",
+      "1 teaspoon onion powder",
+      "1/2 teaspoon cayenne pepper",
+      "1/2 teaspoon dried oregano",
+      "salt and pepper to taste",
+      "cooking spray",
+      "fresh parsley for garnish, optional",
+      "lemon wedges for serving, optional"
+    ],
+    "recipeInstructions": [
+      { "@type": "HowToStep", "text": "Preheat oven to 425°F. Toss halved baby potatoes with olive oil, half the paprika, half the garlic powder, salt, and pepper. Spread on a baking sheet and roast 20 minutes, flipping once at 10 minutes." },
+      { "@type": "HowToStep", "text": "While potatoes roast, pat shrimp completely dry with paper towels. Season with remaining paprika, garlic powder, onion powder, cayenne, oregano, salt, and pepper." },
+      { "@type": "HowToStep", "text": "Heat a skillet over high heat and spray with cooking spray. Cook shrimp in a single layer 90 seconds per side until pink and slightly charred. Work in batches if needed — don't crowd the pan." },
+      { "@type": "HowToStep", "text": "Pull potatoes when golden and crispy. Plate potatoes, top with shrimp. Finish with parsley and a squeeze of lemon if using." }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #0D0D0D; --gold: #C9A84C; --cream: #F5F0E8; --white: #FFFFFF; --muted: #6B6460; }
+    body { background: var(--black); color: var(--cream); font-family: 'Inter', sans-serif; min-height: 100vh; }
+    .site-header { border-bottom: 1px solid rgba(201,168,76,0.25); padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; }
+    .back-link { font-size: 0.75rem; letter-spacing: 0.08em; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+    .back-link:hover { color: var(--gold); }
+    .hero { background: linear-gradient(135deg, #1a1208 0%, #0D0D0D 60%); border-bottom: 2px solid var(--gold); padding: 56px 32px 48px; text-align: center; }
+    .tag { display: inline-block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.4); border-radius: 2px; padding: 4px 12px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.6rem, 8vw, 4.4rem); letter-spacing: 0.06em; line-height: 0.95; color: var(--white); margin-bottom: 8px; }
+    .hero h1 span { color: var(--gold); }
+    .serves { font-size: 0.8rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-top: 14px; }
+    .macro-strip { background: var(--gold); display: grid; grid-template-columns: repeat(4, 1fr); }
+    .macro-item { padding: 16px 8px; text-align: center; border-right: 1px solid rgba(0,0,0,0.15); }
+    .macro-item:last-child { border-right: none; }
+    .macro-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; color: var(--black); line-height: 1; }
+    .macro-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(13,13,13,0.65); margin-top: 3px; }
+    .swap-banner { background: rgba(201,168,76,0.08); border-bottom: 1px solid rgba(201,168,76,0.15); padding: 10px 32px; text-align: center; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; color: var(--gold); }
+    .recipe-body { max-width: 900px; margin: 0 auto; padding: 48px 32px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    @media (max-width: 640px) { .recipe-body { grid-template-columns: 1fr; gap: 36px; padding: 36px 20px 60px; } .hero { padding: 40px 20px 36px; } }
+    .section-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid rgba(201,168,76,0.2); }
+    .ingredient-list { list-style: none; }
+    .ingredient-list li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid rgba(245,240,232,0.06); font-size: 0.875rem; line-height: 1.45; color: var(--cream); }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .bullet { flex-shrink: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-top: 7px; }
+    .steps { list-style: none; }
+    .step { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(245,240,232,0.06); }
+    .step:last-child { border-bottom: none; }
+    .step-num { flex-shrink: 0; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--gold); opacity: 0.5; width: 22px; padding-top: 1px; }
+    .step p { font-size: 0.875rem; line-height: 1.6; color: var(--cream); }
+    .coach-note { grid-column: 1 / -1; background: rgba(201,168,76,0.06); border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0; padding: 20px 24px; }
+    .coach-note .note-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .coach-note p { font-size: 0.85rem; line-height: 1.65; color: rgba(245,240,232,0.8); }
+    .site-footer { border-top: 1px solid rgba(201,168,76,0.15); padding: 20px 32px; text-align: center; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html">Zenith Performance</a>
+    <a class="back-link" href="../index.html">← All Recipes</a>
+  </header>
+
+  <div class="hero">
+    <span class="tag">Dinner · Quick Cook</span>
+    <h1><span>Shrimp</span><br>&amp; Potato<br>Plate</h1>
+    <p class="serves">Serves 2</p>
+  </div>
+
+  <div class="macro-strip">
+    <div class="macro-item"><div class="macro-value">390</div><div class="macro-label">Calories</div></div>
+    <div class="macro-item"><div class="macro-value">38g</div><div class="macro-label">Protein</div></div>
+    <div class="macro-item"><div class="macro-value">36g</div><div class="macro-label">Carbs</div></div>
+    <div class="macro-item"><div class="macro-value">10g</div><div class="macro-label">Fat</div></div>
+  </div>
+
+  <div class="swap-banner">✦ High heat is the move — sear fast, stay juicy · Baby potatoes need no peeling</div>
+
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <div class="section-label">What You Need</div>
+      <ul class="ingredient-list">
+        <li><span class="bullet"></span>450g large shrimp, peeled and deveined</li>
+        <li><span class="bullet"></span>400g baby potatoes, halved</li>
+        <li><span class="bullet"></span>1 tbsp olive oil</li>
+        <li><span class="bullet"></span>1 tsp smoked paprika</li>
+        <li><span class="bullet"></span>1 tsp garlic powder</li>
+        <li><span class="bullet"></span>1 tsp onion powder</li>
+        <li><span class="bullet"></span>1/2 tsp cayenne pepper</li>
+        <li><span class="bullet"></span>1/2 tsp dried oregano</li>
+        <li><span class="bullet"></span>Salt &amp; pepper to taste</li>
+        <li><span class="bullet"></span>Cooking spray</li>
+        <li><span class="bullet"></span>Fresh parsley &amp; lemon — optional</li>
+      </ul>
+    </div>
+
+    <div class="directions-col">
+      <div class="section-label">What You Need To Do</div>
+      <ol class="steps">
+        <li class="step"><span class="step-num">01</span><p>Preheat oven to 425°F. Toss halved baby potatoes with olive oil, half the paprika, half the garlic powder, salt, and pepper. Spread on a baking sheet and roast 20 minutes, flipping once at 10 minutes.</p></li>
+        <li class="step"><span class="step-num">02</span><p>While potatoes roast, pat shrimp completely dry with paper towels. Season with remaining paprika, garlic powder, onion powder, cayenne, oregano, salt, and pepper.</p></li>
+        <li class="step"><span class="step-num">03</span><p>Heat a skillet over high heat and spray with cooking spray. Cook shrimp in a single layer 90 seconds per side until pink and slightly charred. Work in batches if needed — don't crowd the pan.</p></li>
+        <li class="step"><span class="step-num">04</span><p>Pull potatoes when golden and crispy. Plate potatoes, top with shrimp. Finish with parsley and a squeeze of lemon if using.</p></li>
+      </ol>
+
+      <div class="coach-note">
+        <div class="note-label">Coach's Note</div>
+        <p>Shrimp is one of the best protein-per-calorie foods on the planet — 38g protein for 390 calories is elite. The only thing that kills shrimp is wet shrimp, low heat, and a crowded pan. Pat them dry, get the pan screaming hot, and give them space. Baby potatoes are the lazy cook's best friend — no peeling, no cutting down, just halve and roast.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">© Zenith Performance · zp-coaching.com</footer>
+</body>
+</html>

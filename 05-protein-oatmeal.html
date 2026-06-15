@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>High Protein Overnight Oats — Zenith Performance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black:#0D0D0D; --gold:#C9A84C; --gold-dim:#8A6F2E; --cream:#F5F0E8; --mid:#1C1C1C; --border:#2A2A2A; --text-dim:#888; }
+    body { background:var(--black); color:var(--cream); font-family:'Inter',sans-serif; font-size:16px; line-height:1.65; }
+    .site-header { background:var(--black); border-bottom:1px solid var(--border); padding:18px 32px; display:flex; align-items:center; justify-content:space-between; }
+    .site-header .brand { font-family:'Bebas Neue',sans-serif; font-size:1.5rem; letter-spacing:0.1em; color:var(--gold); text-decoration:none; }
+    .site-header .back-link { font-size:0.8rem; color:var(--text-dim); text-decoration:none; letter-spacing:0.05em; text-transform:uppercase; }
+    .site-header .back-link:hover { color:var(--gold); }
+    .recipe-hero { background:var(--mid); border-bottom:2px solid var(--gold); padding:56px 32px 40px; max-width:820px; margin:0 auto; }
+    .recipe-tag { font-size:0.7rem; font-weight:600; letter-spacing:0.15em; text-transform:uppercase; color:var(--gold); margin-bottom:12px; }
+    .recipe-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(2.8rem,7vw,4.5rem); line-height:1; letter-spacing:0.03em; color:var(--cream); margin-bottom:16px; }
+    .recipe-subtitle { font-size:1rem; color:var(--text-dim); max-width:560px; margin-bottom:32px; }
+    .macro-strip { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:4px; overflow:hidden; }
+    .macro-cell { background:var(--black); padding:18px 20px; text-align:center; }
+    .macro-cell .macro-value { font-family:'Bebas Neue',sans-serif; font-size:2.2rem; color:var(--gold); line-height:1; display:block; }
+    .macro-cell .macro-label { font-size:0.68rem; font-weight:600; letter-spacing:0.12em; text-transform:uppercase; color:var(--text-dim); margin-top:4px; display:block; }
+    .macro-cell:first-child .macro-value { color:var(--cream); }
+    .meta-row { display:flex; gap:28px; flex-wrap:wrap; padding:20px 32px; border-bottom:1px solid var(--border); max-width:820px; margin:0 auto; font-size:0.82rem; color:var(--text-dim); }
+    .meta-row span strong { color:var(--cream); font-weight:600; }
+    .recipe-body { max-width:820px; margin:0 auto; padding:48px 32px 80px; display:grid; grid-template-columns:280px 1fr; gap:56px; align-items:start; }
+    .section-label { font-family:'Bebas Neue',sans-serif; font-size:1.4rem; letter-spacing:0.08em; color:var(--gold); margin-bottom:20px; padding-bottom:8px; border-bottom:1px solid var(--gold-dim); }
+    .ingredients-list { list-style:none; }
+    .ingredients-list li { display:flex; align-items:baseline; gap:10px; padding:9px 0; border-bottom:1px solid var(--border); font-size:0.92rem; }
+    .ingredients-list li:last-child { border-bottom:none; }
+    .ingredient-amount { font-family:'Bebas Neue',sans-serif; font-size:1rem; color:var(--gold); min-width:56px; flex-shrink:0; }
+    .ingredient-name { color:var(--cream); }
+    .directions-list { list-style:none; counter-reset:steps; }
+    .directions-list li { counter-increment:steps; display:grid; grid-template-columns:36px 1fr; gap:16px; padding:16px 0; border-bottom:1px solid var(--border); font-size:0.93rem; color:var(--cream); align-items:start; }
+    .directions-list li:last-child { border-bottom:none; }
+    .directions-list li::before { content:counter(steps); font-family:'Bebas Neue',sans-serif; font-size:1.6rem; color:var(--gold); line-height:1.1; }
+    .coach-note { grid-column:1 / -1; background:var(--mid); border-left:3px solid var(--gold); border-radius:0 4px 4px 0; padding:20px 24px; margin-top:8px; }
+    .coach-note .note-label { font-size:0.68rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); margin-bottom:8px; }
+    .coach-note p { font-size:0.9rem; color:var(--text-dim); }
+    .site-footer { text-align:center; padding:32px; border-top:1px solid var(--border); font-size:0.78rem; color:var(--text-dim); }
+    .site-footer a { color:var(--gold); text-decoration:none; }
+    @media(max-width:680px){ .recipe-body{grid-template-columns:1fr;gap:36px;} .macro-strip{grid-template-columns:repeat(2,1fr);} .recipe-hero,.meta-row,.recipe-body{padding-left:20px;padding-right:20px;} }
+</style>
+</head>
+<body itemscope itemtype="https://schema.org/Recipe">
+  <header class="site-header">
+    <a href="../index.html" class="brand">Zenith Performance</a>
+    <a href="../index.html" class="back-link">&#8592; Recipe Hub</a>
+  </header>
+  <section class="recipe-hero">
+    <p class="recipe-tag">HIGH PROTEIN · BREAKFAST / PRE-WORKOUT</p>
+    <h1 class="recipe-title" itemprop="name">High Protein Overnight Oats</h1>
+    <p class="recipe-subtitle" itemprop="description">Make it before bed, eat it in the morning. No cooking, no excuses. Hits 40g of protein before you've done anything useful with your day.</p>
+    <div class="macro-strip">
+      <div class="macro-cell"><span class="macro-value" itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation"><span itemprop="calories">490</span></span><span class="macro-label">Calories</span></div>
+      <div class="macro-cell"><span class="macro-value">40g</span><span class="macro-label">Protein</span></div>
+      <div class="macro-cell"><span class="macro-value">58g</span><span class="macro-label">Carbs</span></div>
+      <div class="macro-cell"><span class="macro-value">10g</span><span class="macro-label">Fat</span></div>
+    </div>
+  </section>
+  <div class="meta-row">
+    <span>Prep <strong itemprop="prepTime" content="PT5M">5 min</strong></span>
+    <span>Cook <strong itemprop="cookTime" content="PT0M">0 min</strong></span>
+    <span>Servings <strong itemprop="recipeYield">2</strong></span>
+    <span>Macros shown <strong>per serving</strong></span>
+  </div>
+  <main class="recipe-body">
+    <div class="ingredients-col">
+      <h2 class="section-label">Ingredients</h2>
+      <ul class="ingredients-list">
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1 cup</span><span class="ingredient-name">rolled oats</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1 cup</span><span class="ingredient-name">unsweetened almond milk</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1 cup</span><span class="ingredient-name">fat-free Greek yogurt</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">2 scoops</span><span class="ingredient-name">vanilla whey protein powder</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">2 tbsp</span><span class="ingredient-name">chia seeds</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1 tbsp</span><span class="ingredient-name">honey</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1/2 cup</span><span class="ingredient-name">blueberries (topping)</span></li>
+        <li itemprop="recipeIngredient"><span class="ingredient-amount">1/4 cup</span><span class="ingredient-name">sliced almonds (topping)</span></li>
+      </ul>
+    </div>
+    <div class="directions-col">
+      <h2 class="section-label">Directions</h2>
+      <ol class="directions-list" itemprop="recipeInstructions">
+        <li>Combine oats, almond milk, Greek yogurt, protein powder, chia seeds, and honey in a mason jar or container.</li>
+        <li>Stir vigorously until protein powder is fully incorporated — no dry clumps.</li>
+        <li>Cover and refrigerate overnight (minimum 4 hours).</li>
+        <li>In the morning, stir once more. Add splash of almond milk if too thick.</li>
+        <li>Top with blueberries and sliced almonds before eating.</li>
+      </ol>
+      <div class="coach-note">
+        <p class="note-label">Coach's Note</p>
+        <p>Two scoops of protein in oats sounds like a lot but it works. The yogurt keeps it from tasting like a shaker cup. Make two jars at a time — one for today, one for tomorrow.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Zenith Performance &middot; <a href="https://zp-coaching.com" target="_blank">zp-coaching.com</a></p>
+    <p style="margin-top:6px;">Recipes crafted for performance. Nutrition values are estimates &mdash; log in MyNetDiary for precision tracking.</p>
+  </footer>
+</body>
+</html>

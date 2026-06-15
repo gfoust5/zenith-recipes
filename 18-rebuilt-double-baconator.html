@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rebuilt Double Baconator – Zenith Performance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": "Rebuilt Double Baconator",
+    "description": "A macro-smart double smash burger with 54g protein and real fast-food satisfaction — 660 calories built to fit a training day.",
+    "recipeYield": "1 serving",
+    "prepTime": "PT5M",
+    "cookTime": "PT15M",
+    "totalTime": "PT20M",
+    "recipeCategory": "Dinner",
+    "recipeCuisine": "American",
+    "nutrition": {
+      "@type": "NutritionInformation",
+      "calories": "660 calories",
+      "proteinContent": "54 g",
+      "carbohydrateContent": "32 g",
+      "fatContent": "33 g"
+    },
+    "recipeIngredient": [
+      "168 grams Member's Mark 93/7 lean ground beef",
+      "salt and pepper to taste",
+      "1 brioche bun",
+      "3 slices fully cooked bacon",
+      "2 slices Velveeta cheese",
+      "8 grams Hellmann's light mayo",
+      "8 grams sugar free ketchup"
+    ],
+    "recipeInstructions": [
+      { "@type": "HowToStep", "text": "Split 168 grams of 93/7 ground beef into two equal balls. Season with salt and pepper. Smash flat in a hot pan over medium-high heat. Cook until browned, flip once, cook through." },
+      { "@type": "HowToStep", "text": "Remove patties. Toast the brioche bun in the same pan until golden." },
+      { "@type": "HowToStep", "text": "Microwave 3 slices of bacon on a paper towel for 15–17 seconds." },
+      { "@type": "HowToStep", "text": "Assemble: bottom bun, first patty, 1 slice Velveeta, 1.5 slices bacon, second patty, second slice Velveeta, remaining bacon. Spread light mayo and sugar free ketchup on the top bun. Close and eat." }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root { --black: #0D0D0D; --gold: #C9A84C; --cream: #F5F0E8; --white: #FFFFFF; --muted: #6B6460; }
+    body { background: var(--black); color: var(--cream); font-family: 'Inter', sans-serif; min-height: 100vh; }
+    .site-header { border-bottom: 1px solid rgba(201,168,76,0.25); padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.5rem; letter-spacing: 0.12em; color: var(--gold); text-decoration: none; }
+    .back-link { font-size: 0.75rem; letter-spacing: 0.08em; color: var(--muted); text-decoration: none; text-transform: uppercase; transition: color 0.2s; }
+    .back-link:hover { color: var(--gold); }
+    .hero { background: linear-gradient(135deg, #1a1208 0%, #0D0D0D 60%); border-bottom: 2px solid var(--gold); padding: 56px 32px 48px; text-align: center; }
+    .tag { display: inline-block; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(201,168,76,0.4); border-radius: 2px; padding: 4px 12px; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(2.6rem, 8vw, 4.4rem); letter-spacing: 0.06em; line-height: 0.95; color: var(--white); margin-bottom: 8px; }
+    .hero h1 span { color: var(--gold); }
+    .serves { font-size: 0.8rem; letter-spacing: 0.1em; color: var(--muted); text-transform: uppercase; margin-top: 14px; }
+    .macro-strip { background: var(--gold); display: grid; grid-template-columns: repeat(4, 1fr); }
+    .macro-item { padding: 16px 8px; text-align: center; border-right: 1px solid rgba(0,0,0,0.15); }
+    .macro-item:last-child { border-right: none; }
+    .macro-value { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; letter-spacing: 0.04em; color: var(--black); line-height: 1; }
+    .macro-label { font-size: 0.6rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(13,13,13,0.65); margin-top: 3px; }
+    .swap-banner { background: rgba(201,168,76,0.08); border-bottom: 1px solid rgba(201,168,76,0.15); padding: 10px 32px; text-align: center; font-size: 0.72rem; font-weight: 500; letter-spacing: 0.06em; color: var(--gold); }
+    .recipe-body { max-width: 900px; margin: 0 auto; padding: 48px 32px 80px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    @media (max-width: 640px) { .recipe-body { grid-template-columns: 1fr; gap: 36px; padding: 36px 20px 60px; } .hero { padding: 40px 20px 36px; } }
+    .section-label { font-size: 0.65rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; padding-bottom: 8px; border-bottom: 1px solid rgba(201,168,76,0.2); }
+    .ingredient-list { list-style: none; }
+    .ingredient-list li { display: flex; gap: 12px; align-items: flex-start; padding: 10px 0; border-bottom: 1px solid rgba(245,240,232,0.06); font-size: 0.875rem; line-height: 1.45; color: var(--cream); }
+    .ingredient-list li:last-child { border-bottom: none; }
+    .bullet { flex-shrink: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--gold); margin-top: 7px; }
+    .swap-tag { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); background: rgba(201,168,76,0.12); border-radius: 2px; padding: 1px 5px; margin-left: 4px; white-space: nowrap; vertical-align: middle; }
+    .steps { list-style: none; }
+    .step { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid rgba(245,240,232,0.06); }
+    .step:last-child { border-bottom: none; }
+    .step-num { flex-shrink: 0; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; color: var(--gold); opacity: 0.5; width: 22px; padding-top: 1px; }
+    .step p { font-size: 0.875rem; line-height: 1.6; color: var(--cream); }
+    .coach-note { grid-column: 1 / -1; background: rgba(201,168,76,0.06); border-left: 3px solid var(--gold); border-radius: 0 4px 4px 0; padding: 20px 24px; }
+    .coach-note .note-label { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .coach-note p { font-size: 0.85rem; line-height: 1.65; color: rgba(245,240,232,0.8); }
+    .site-footer { border-top: 1px solid rgba(201,168,76,0.15); padding: 20px 32px; text-align: center; font-size: 0.7rem; letter-spacing: 0.08em; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="../index.html">Zenith Performance</a>
+    <a class="back-link" href="../index.html">← All Recipes</a>
+  </header>
+
+  <div class="hero">
+    <span class="tag">Dinner · Sam's Club Build</span>
+    <h1><span>Rebuilt</span><br>Double<br>Baconator</h1>
+    <p class="serves">Serves 1</p>
+  </div>
+
+  <div class="macro-strip">
+    <div class="macro-item"><div class="macro-value">660</div><div class="macro-label">Calories</div></div>
+    <div class="macro-item"><div class="macro-value">54g</div><div class="macro-label">Protein</div></div>
+    <div class="macro-item"><div class="macro-value">32g</div><div class="macro-label">Carbs</div></div>
+    <div class="macro-item"><div class="macro-value">33g</div><div class="macro-label">Fat</div></div>
+  </div>
+
+  <div class="swap-banner">✦ Sam's Club 93/7 beef · Light mayo + sugar-free ketchup swap · Training day meal</div>
+
+  <div class="recipe-body">
+    <div class="ingredients-col">
+      <div class="section-label">What You Need</div>
+      <ul class="ingredient-list">
+        <li><span class="bullet"></span><span>168g Member's Mark 93/7 lean ground beef <span class="swap-tag">Sam's Club</span></span></li>
+        <li><span class="bullet"></span>Salt &amp; pepper to taste</li>
+        <li><span class="bullet"></span>1 brioche bun</li>
+        <li><span class="bullet"></span>3 slices fully cooked bacon</li>
+        <li><span class="bullet"></span>2 slices Velveeta cheese</li>
+        <li><span class="bullet"></span>8g Hellmann's light mayo <span class="swap-tag">Swap</span></li>
+        <li><span class="bullet"></span>8g sugar free ketchup <span class="swap-tag">Swap</span></li>
+      </ul>
+    </div>
+
+    <div class="directions-col">
+      <div class="section-label">What You Need To Do</div>
+      <ol class="steps">
+        <li class="step"><span class="step-num">01</span><p>Split 168g of 93/7 ground beef into two equal balls. Season with salt and pepper. Smash flat in a screaming hot pan over medium-high heat. Cook until browned, flip once, cook through.</p></li>
+        <li class="step"><span class="step-num">02</span><p>Remove patties. Toast the brioche bun in the same pan until golden.</p></li>
+        <li class="step"><span class="step-num">03</span><p>Microwave 3 slices of bacon on a paper towel for 15–17 seconds.</p></li>
+        <li class="step"><span class="step-num">04</span><p>Assemble: bottom bun, first patty, 1 slice Velveeta, 1.5 slices bacon, second patty, second slice Velveeta, remaining bacon. Spread light mayo and sugar free ketchup on the top bun. Close and eat.</p></li>
+      </ol>
+
+      <div class="coach-note">
+        <div class="note-label">Coach's Note</div>
+        <p>54g of protein in a double smash burger. The 93/7 beef from Sam's is the workhorse — bulk pack, leaner than standard 80/20, and it still smashes beautifully. At 660 calories this earns its spot on a training day. Slot it in post-workout and let the protein do its job. Light mayo and sugar-free ketchup are saving you roughly 80 calories over the originals with zero sacrifice in taste.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">© Zenith Performance · zp-coaching.com</footer>
+</body>
+</html>
